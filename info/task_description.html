@@ -1,0 +1,129 @@
+<p>
+    The <a href="http://en.wikipedia.org/wiki/Playfair_cipher">Playfair cipher</a>
+    or Playfair square is a manual symmetric encryption technique and
+    was the first literal digraph substitution cipher. The scheme was invented in 1854 by Charles Wheatstone,
+    but bears the name of Lord Playfair who promoted the use of the cipher.
+    The Playfair cipher uses a 5 by 5 table containing a key word or phrase.
+    Memorization of the keyword and
+    4 simple rules was all that was required to create the 5 by 5 table and use the cipher.
+    But we will use 6 by 6 table.
+</p>
+
+<p>
+    We will use for our key table ASCII letters in lowercase ("abcdefghijklmnopqrstuvwxyz") and digits ("0123456789").
+    They are have the following order:
+</p>
+<pre>
+"abcdefghijklmnopqrstuvwxyz0123456789"
+</pre>
+<p>
+    To generate the key table, one would first fill in the spaces in the table with the letters of the keyword (dropping
+    any duplicate letters and digits),
+    then fill the remaining spaces with the rest of the letters of the alphabet in order.
+    The key is written in the top rows of the table, from left to right.
+    The keyword together with the conventions for filling in the 6 by 6 table constitute the cipher key.
+
+    To encrypt a message we need to prepare text as first, one would lower case of letters,
+    break the message into digraphs (groups of 2 letters) and
+    skip whitespaces and punctuation symbols, such that, for example,
+    "Hello World!" becomes "he ll ow or ld", and map them out on the key table.
+
+    The two letters of the digraph are considered as the opposite corners of a rectangle in the key table.
+    Note the relative position of the corners of this rectangle. Then apply the following 4 rules, in order, to
+    each pair of letters in the plaintext:
+</p>
+<ul>
+    <li>
+        Prepare text: convert to lowercase, remove all non-used symbols (whitespaces, punctuation etc)
+        and break the message into digraphs.
+        If both letters are the same, add an "x" after the first letter (for double "x" use "z" as completion character)
+        and shift following digraphs. If needed, append a "z" to complete the final digraph (or "x" if the last letter
+        is "z").
+        For example "pp dr ..." will become "px pd r..." before encoding and "xx zz ..." will became "xz xz z...".
+    </li>
+    <li>
+        If the letters appear on the same row of your table, replace them with the letters to their immediate right
+        respectively (wrapping around to the left side of the row if a letter in the original pair was on the right side
+        of the row).
+    </li>
+    <li>
+        If the letters appear on the same column of your table, replace them with the letters immediately below
+        respectively (wrapping around to the top side of the column
+        if a letter in the original pair was on the bottom side of the column).
+    </li>
+    <li>
+        If the letters are not on the same row or column, replace them with the letters on the same row respectively but
+        at the other pair of corners of the rectangle defined by the original pair. The order is important – the first
+        letter of the encrypted pair is the one that lies on the same row as the first letter of the plaintext pair.
+    </li>
+
+
+</ul>
+<p>
+    To decrypt, use the inverse (opposite) of the last 3 rules, and the 1st as-is (dropping any extra "X"s, or "Q"s)
+    that do not make sense in the final message when finished).
+</p>
+
+<p>
+    For example, the keyword is "checkio101". Then the key table will be looked as
+</p>
+
+<pre>
+c h e k i o
+1 0 a b d f
+g j l m n p
+q r s t u v
+w x y z 2 3
+4 5 6 7 8 9
+</pre>
+<p>
+    Let's the message is "Fizz Buzz is 89 XXX. After using rule 1 (text preparation) we will get -
+    "fi zx zb uz zi sx 89 xz xz".
+    <br>
+    - "fi" => "do";<br>
+    - "zx" => "2y";<br>
+    - "zb" => "7m";<br>
+    - "uz" => "t2";<br>
+    - "zi" => "2k";<br>
+    - "sx" => "ry";<br>
+    - "89" => "94";<br>
+    - "xz" => "y2";<br>
+    - "xz" => "y2".<br>
+    And the encoded message is "do2y7mt22kry94y2y2".
+</p>
+
+<p>
+    You should realize two function - "encode" and "decode". Each function receive a message (ciphered or opened) and
+    keyword.
+    "encode" function process and crypt a message. "decode" function decrypt the encoded message (of course in processed
+    verision).
+</p>
+<p>
+    <strong>Input: </strong> Two arguments. A message as a string (unicode) and a keyword as a string (unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> The encoded or decoded message (related to function).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+</p>
+
+<p>
+    <strong>Precondition:</strong>
+</p>
+
+<p>
+    <strong>Sources:</strong>
+    <a href="http://en.wikipedia.org/wiki/Playfair_cipher">Wikipedia</a><br>
+</p>
