@@ -51,6 +51,7 @@
     letter-spacing: 1px;
     word-break: break-word;
     white-space: pre-wrap;
+    font-family: Consolas, monospace !important;
 }
 
 .animation-content .error{

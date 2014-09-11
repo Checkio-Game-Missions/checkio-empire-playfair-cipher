@@ -40,10 +40,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             }
 
             //YOUR FUNCTION NAME
-            var fname = 'checkio';
 
-            var checkioInput = data.in;
-            var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
+            var checkioInputStr = data.in || 'encode("Fizz Buzz is x89 XX.", "checkio101")';
+//            var checkioInputStr = JSON.stringify(data.in);
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);
@@ -72,13 +71,13 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
 
             if (data.ext) {
                 var rightResult = data.ext["answer"];
-                var userResult = data.out;
+                var userResult = data.out["code_result"];
                 var result = data.ext["result"];
                 var result_addon = data.ext["result_addon"];
 
                 //if you need additional info from tests (if exists)
                 var explanation = data.ext["explanation"];
-                $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
+                $content.find('.output').html('&nbsp;Your result:<br>' + JSON.stringify(userResult));
                 if (!result) {
                     $content.find('.answer').html('Right result:&nbsp;' + JSON.stringify(rightResult));
                     $content.find('.answer').addClass('error');

@@ -3,9 +3,9 @@ import string
 
 init_code = """
 if not "encode" in USER_GLOBAL:
-    raise NotImplementedError("Where is 'min'?")
+    raise NotImplementedError("Where is 'encode'?")
 if not "decode" in USER_GLOBAL:
-    raise NotImplementedError("Where is 'max'?")
+    raise NotImplementedError("Where is 'decode'?")
 
 encode = USER_GLOBAL['encode']
 decode = USER_GLOBAL['decode']
