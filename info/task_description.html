@@ -60,8 +60,7 @@
 
 </ul>
 <p>
-    To decrypt, use the inverse (opposite) of the last 3 rules, and the 1st as-is (dropping any extra "X"s, or "Q"s)
-    that do not make sense in the final message when finished).
+    To decrypt, use the inverse (opposite) of the last 3 rules and you will get the processed (cut version).
 </p>
 
 <p>
@@ -77,7 +76,7 @@ w x y z 2 3
 4 5 6 7 8 9
 </pre>
 <p>
-    Let's the message is "Fizz Buzz is 89 XXX. After using rule 1 (text preparation) we will get -
+    Let's the message is "Fizz Buzz is x89 XX." After using rule 1 (text preparation) we will get -
     "fi zx zb uz zi sx 89 xz xz".
     <br>
     - "fi" => "do";<br>
@@ -112,6 +111,8 @@ w x y z 2 3
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
+encode("Fizz Buzz is x89 XX.", "checkio101") == "do2y7mt22kry94y2y2"
+decode("do2y7mt22kry94y2y2", "checkio101") == "fizxzbuzzisx89xzxz"
     </pre>
 </div>
 
