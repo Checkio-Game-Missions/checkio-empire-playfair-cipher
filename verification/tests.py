@@ -61,7 +61,8 @@ ENCODE_TESTS = [
         'encode("One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.", "goodmorming")',
         'gacrdifghnspfaoinrditngvetdjfnidovid0kpciumifbgvpnaisbgkgrwnqcwobaxndircmghsgxcfmgasajjgiwigckcwperghscpnzgaqgtnirdtmpdqfcbejbbgfqpnqmaxbrqgysfbobqmusvjnpfedtkmwnnpgxedrtaccph1vhgojsh1mdrcobbgmgxmrbbkznmepnxgasgtxoq3nxfexogatupncfiumghnteyseomkznckawmamtpeoxbagufwcrbrepbozsgtqmrbianbh4rdrcas'],
     [
-        'encode("The quick, brown fox jumps over a lazy dog.", "nobody")', 'vfikwgejntasbcnzmrpqzeshwnqb2oybe1'],
+        'encode("The quick, brown fox jumps over a lazy dog.", "nobody")',
+        'vfikwgejntasbcnzmrpqzeshwnqb2oybe1'],
     [
         'encode("A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary", "xyzqwerty")',
         'czpokdfl4u3ddxohgtnhmddhzssple3dleokpolivtzsbgdxlp4uofsdagd3d3exydnpalhokmlilsbfmhzjjbijzsipzegbgnzeinsxkzbtbgtnrnpozdsakxxsagwdnhtllixykodypaqkmaijlelsmbzjjbjzdndtzddyrklbagqdoflelpkll1mlofsdogszhbnlnicnmwvtkdbtlfkqsalpbclptcdkhoagxyxyx1kogbd3zs3dlisydxath0x1foxykodypaydnhbgszfmwdgvtgrnzsdmkoin4urcqkpacnbcsxlirtczhohtokmhsxmdblsdbaagwsdx3dmanpsymah0teydjgxyxsagbahoy3xdzcndftzddytbtakoryagh0opeyzjzszjfoydkzmp3ymx0tursxtgxyyspegbg0cnl1tbbl0ltszdsaagysxdkbhbol0lmdbfsdmdkz2lswdl4fhrdwliagqknszsydtbroxkpmhbkylivtatxyd3h0rcvrrhxemdtbtmsxtnlemdzdofmambkzhoszdlh0da0rtx'],
@@ -77,6 +78,9 @@ ENCODE_TESTS = [
     [
         'encode("One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.", "iddqd")',
         'poflpllqunvjglknfhplviltbvrhfglptzlpwqslctcmhiltjfhm0uafdlylmexmqotepllfqdogeyijqdmuvhovx3lciphsklldoglsi1poeavilnnvlmcejibihcmqdejfsemzfieavehiqbseussmfjkinvmiylfjeycppvpqlss4ysqefvs4amlfqbmqqdsaifqc1ixkjfyemulvsdktetkisdpotujfijctqdunvbvecoim1iipfsrav1kldsqoitksflfilkbqzslvseifmhhdl0nplfmu'],
+    [
+        'encode("The quick, brown fox jumps over a lazy dog.", "iddqd")',
+        'vfgisqkrcppvmgrvgwnrvlshocoi0zamf0'],
     [
         'encode("A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary", "9876543210")',
         '1ytiefxlxiqgqfijszgbto1mhkqpryqgryomtircs5hkonqftpximjqkzngqgq7khqistljimyrctqolmhzeoicnhkipzxnognzxctkfcf0songs0mtig1jhgffkznfdgbslrcfwmoqhihcktzcnrytqpozeoiezgyfog1qhegpsznh1mjrytpgru9mrmjqknjkhm3sytc2ssvs5ef0slxkcjhtpb3tpt0fejiznfwfwowmonogqhkqgrckgqfosbmowjmfwmoqhihhqgbonkhfmfdsnzs0mhkotmoctxih2ckih2sb3kfrcfp1yjimgommhkftospqkbszndqqfqgtziskgtzbmgvhqlcfwfkznbsjidwfqy1ygfsg1qhs0somorzznbmitxyzehkzejmhqcfirwdmxy2r6kfzsfwgkqynodz2su9s0spzigjg1jhzngkfqjcm3mtzitoolqktocfvoqdstxog0dfrcznckjshkhqs00nfgrim3hfrcs5osfwgqbmh2zo0gk7tos05mkfgsrytog1mjtzpocfjikhstbmhoy3sx'],
@@ -97,7 +101,9 @@ DECODE_TESTS = [
     [
         'decode("poflpllqunvjglknfhplviltbvrhfglptzlpwqslctcmhiltjfhm0uafdlylmexmqotepllfqdogeyijqdmuvhovx3lciphsklldoglsi1poeavilnnvlmcejibihcmqdejfsemzfieavehiqbseussmfjkinvmiylfjeycppvpqlss4ysqefvs4amlfqbmqqdsaifqc1ixkjfyemulvsdktetkisdpotujfijctqdunvbvecoim1iipfsrav1kldsqoitksflfilkbqzslvseifmhhdl0nplfmu", "iddqd")',
         'onemorningwhengregorsamsawokefromtroubledxdreamshefoundhimselftransformedinhisbedintoahorxribleverminhelayonhisarmourlikebackandifheliftedhisheadalitxtlehecouldseehisbrownbellyslightlydomedanddividedbyarchesintostifxfsectionsthebedxdingwashardlyabletocoveritandsexemedreadytoslideoffanymoment'],
-    ['decode("vfikwgejntasbcnzmrpqzeshwnqb2oybe1", "nobody")', 'thequickbrownfoxjumpsoveralazydogz'],
+    [
+        'decode("vfikwgejntasbcnzmrpqzeshwnqb2oybe1", "nobody")',
+        'thequickbrownfoxjumpsoveralazydogz'],
     [
         'decode("1ytiefxlxiqgqfijszgbto1mhkqpryqgryomtircs5hkonqftpximjqkzngqgq7khqistljimyrctqolmhzeoicnhkipzxnognzxctkfcf0songs0mtig1jhgffkznfdgbslrcfwmoqhihcktzcnrytqpozeoiezgyfog1qhegpsznh1mjrytpgru9mrmjqknjkhm3sytc2ssvs5ef0slxkcjhtpb3tpt0fejiznfwfwowmonogqhkqgrckgqfosbmowjmfwmoqhihhqgbonkhfmfdsnzs0mhkotmoctxih2ckih2sb3kfrcfp1yjimgommhkftospqkbszndqqfqgtziskgtzbmgvhqlcfwfkznbsjidwfqy1ygfsg1qhs0somorzznbmitxyzehkzejmhqcfirwdmxy2r6kfzsfwgkqynodz2su9s0spzigjg1jhzngkfqjcm3mtzitoolqktocfvoqdstxog0dfrcznckjshkhqs00nfgrim3hfrcs5osfwgqbmh2zo0gk7tos05mkfgsrytog1mjtzpocfjikhstbmhoy3sx", "9876543210")',
         'awonderfulserenityhastakenposxsesxsionofmyentiresoullikethesesweetmorningsofspringwhichienjoywithmywholeheartiamaloneandfeelthecharmofexistenceinthisxspotwhichwascreatedfortheblisxsofsoulslikemineiamsohappymydearfriendsoabsorbedinthexexquisitesenseofmeretranquilexistencethatineglectmytalentsishouldbeincapableofdrawingasinglestrokeatthepresentmomentandyetifexelthatineverwasagreaterartistxthannowxwhenwhilethelovelyvalxleytexemswithvapouraroundmeandthemeridiansunstrikestheuppersurfaceoftheimpenetrablefoliageofmytrexesandbutafewstraygleamsxstealintotheinnersanctuary'],
@@ -107,12 +113,15 @@ DECODE_TESTS = [
     [
         'decode("hrflbtcztzdqijsaagxelbtsl1mabholhrflblvgkzbp0latkqm3sirnhbh0rdpolp0hmahbagxdxsg1ydkzrohoraxydm3dnctbdyrakzxmg1qkoalqsintdfmkbl3ybfhiabryagwdnbmdliagd3ysh0bgdprnbtkynrmh0rkypbzd0hlnrnufg1xd0hsyrer3kdlhmpeptqagqkclnrdwh0k32lsmkqokcygbgakzszdwlendtxdxkyofrnhbgbkocnbtbrkoysbajbbp0latzq", "xyzqwerty")',
         'farfarawaybehindthewordmountainsfarfromthecountriesvokaliaandconsonantiatherelivetheblindtextsseparatedtheyliveinboxokmarksgroverightatxthecoastofthesemanticsalargelanguageoceanasmallrivernamedxdudenflowsbytheirplaceandsuppliesitwiththenecesxsaryregelialiaitisaparadisematiccountryz'],
-    ['decode("irqfnjqtyicpirstnogshqiumtfdqhozfq2gjomoiomhfkno1gkhbmiulyiscpmjcym0fhhqcpirs0hkg1ingyyg", "9876543210")',
-     'loremipsumdolorsitametconsectetueradipiscingelitaeneancomxmodoligulaegetdoloraeneanmassa'],
+    [
+        'decode("irqfnjqtyicpirstnogshqiumtfdqhozfq2gjomoiomhfkno1gkhbmiulyiscpmjcym0fhhqcpirs0hkg1ingyyg", "9876543210")',
+        'loremipsumdolorsitametconsectetueradipiscingelitaeneancomxmodoligulaegetdoloraeneanmassa'],
     [
         'decode("bogknsacdcvicocufhnswokui3esfgsnlusntdkfn1nuiokuifebrdyggqzktlusnotenskgagycewofagbrbneyx4wcfthscsqgycfknaboicwoujdstjeqfoniqooycgifqfl0goicveioynqfr00tfifedsmbzkfiewntasodfkpbtkchfvpbybkgynoyagwhogydanxjifwebrezwfc0etfewfbotuifofn1agdc3ivenwbmanftfsneyscsfwnoouczgkgoscnybvezqfogbeiboakdkgbr", "nobody")',
         'onemorningwhengregorsamsawokefromtroubledxdreamshefoundhimselftransformedinhisbedintoahorxribleverminhelayonhisarmourlikebackandifheliftedhisheadalitxtlehecouldseehisbrownbellyslightlydomedanddividedbyarchesintostifxfsectionsthebedxdingwashardlyabletocoveritandsexemedreadytoslideoffanymoment'],
-    ['decode("vfgisqkrcppvmgrvgwnrvlshocoi0zamf0", "iddqd")', 'thequickbrownfoxjumpsoveralazydogz'],
+    [
+        'decode("vfgisqkrcppvmgrvgwnrvlshocoi0zamf0", "iddqd")',
+        'thequickbrownfoxjumpsoveralazydogz'],
     [
         'decode("etgarbievkwnepfgszjntubjfajrtswntsxggaiag1faxoeptgvkqmpbsjnwnw2pawrdgegfnyiawhighnspmfqgfata2soxlg2sjgpcpneoxococjgafbbgnfcpsjfejniriafwgxwaaefrasqgtswhazspmfpsntemfbwaibdisjfcqmtstgnxdthvqmpbrgafofgvgjejh2g1rbeoeirfbgtgbctgdebrgfsjfwfwkxgxoxnwfawniarcepwobakxmqfwgxwaaeawjnxoafmhfevozscjfautgxjgvkbkfraeejbcpciamietgfonxghnpctuidpbjzsjpwepwnasrdrcasbag0awfqfwcpsjjzgfcwpetetnoifbwaoeowgxussjbaagxsspfaspmqawpnjmwch1tcqvpczsfwcrtxoxlsejdtoeidsbmrfbbgsjcrpegmofhysbtuigpbtupnwkwpgwwdnbefiasjfrrlfaawoeckfnmjofrniag1wofwnwbabkvubnp2tuoe4npccotstufbqmasazpngfafgwbaavtbg2", "goodmorming")',
         'awonderfulserenityhastakenposxsesxsionofmyentiresoullikethesesweetmorningsofspringwhichienjoywithmywholeheartiamaloneandfeelthecharmofexistenceinthisxspotwhichwascreatedfortheblisxsofsoulslikemineiamsohappymydearfriendsoabsorbedinthexexquisitesenseofmeretranquilexistencethatineglectmytalentsishouldbeincapableofdrawingasinglestrokeatthepresentmomentandyetifexelthatineverwasagreaterartistxthannowxwhenwhilethelovelyvalxleytexemswithvapouraroundmeandthemeridiansunstrikestheuppersurfaceoftheimpenetrablefoliageofmytrexesandbutafewstraygleamsxstealintotheinnersanctuary'],
