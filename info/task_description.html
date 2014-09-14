@@ -1,45 +1,41 @@
 <p>
     The <a href="http://en.wikipedia.org/wiki/Playfair_cipher">Playfair cipher</a>
-    or Playfair square is a manual symmetric encryption technique and
-    was the first literal digraph substitution cipher. The scheme was invented in 1854 by Charles Wheatstone,
-    but bears the name of Lord Playfair who promoted the use of the cipher.
-    The Playfair cipher uses a 5 by 5 table containing a key word or phrase.
-    Memorization of the keyword and
-    4 simple rules was all that was required to create the 5 by 5 table and use the cipher.
-    But we will use 6 by 6 table.
+    or Playfair square, is a manual symmetric encryption technique and was the first literal digraph substitution
+    cipher. The scheme was invented in 1854 by Charles Wheatstone, but bears the name of Lord Playfair who promoted the
+    use of the cipher. The Playfair cipher uses a 5 by 5 table containing a keyword or phrase. Memorization of the
+    keyword and 4 simple rules are all that’s required to create the 5 by 5 table and use the cipher. For this mission,
+    we will do one better and use a 6 by 6 table.
 </p>
 
 <p>
-    We will use for our key table ASCII letters in lowercase ("abcdefghijklmnopqrstuvwxyz") and digits ("0123456789").
-    They are have the following order:
+    For the key table, we should use ASCII letters in lowercase ("abcdefghijklmnopqrstuvwxyz") and digits
+    ("0123456789"). They are have the following order:
 </p>
 <pre>
 "abcdefghijklmnopqrstuvwxyz0123456789"
 </pre>
 <p>
-    To generate the key table, one would first fill in the spaces in the table with the letters of the keyword (dropping
-    any duplicate letters and digits),
-    then fill the remaining spaces with the rest of the letters of the alphabet in order.
-    The key is written in the top rows of the table, from left to right.
-    The keyword together with the conventions for filling in the 6 by 6 table constitute the cipher key.
+    To generate the key table, the spaces in the table must be filled with the letters contained in the keyword
+    (dropping any duplicate letters and digits), then the remaining spaces are filled with the rest of the letters and
+    digits of the alphabet in order. The key is written in the top rows of the table, from left to right. The keyword
+    together with the conventions for filling in the 6 by 6 table constitute the cipher key.
+</p>
+<p>
 
-    To encrypt a message we need to prepare text as first, one would lower case of letters,
-    break the message into digraphs (groups of 2 letters) and
-    skip whitespaces and punctuation symbols, such that, for example,
-    "Hello World!" becomes "he ll ow or ld", and map them out on the key table.
-
-    The two letters of the digraph are considered as the opposite corners of a rectangle in the key table.
-    Note the relative position of the corners of this rectangle. Then apply the following 4 rules, in order, to
-    each pair of letters in the plaintext:
+    To encrypt a message, we will need to prepare a block of text. Upper case letters get transposed into lower case of
+    letters, we’d break the message into digraphs (groups of 2 letters) and skip white spaces and punctuation symbols.
+    The result would turn a message like "Hello World!" into "he ll ow or ld", and would get mapped out in the key
+    table. The two letters of the digraph are considered to be the opposite corners of a rectangle in the key table.
+    Note the relative position of the corners of this rectangle. Then apply the following 4 rules, in order, to each
+    pair of letters in the plaintext:
 </p>
 <ul>
     <li>
-        Prepare text: convert to lowercase, remove all non-used symbols (whitespaces, punctuation etc)
-        and break the message into digraphs.
-        If both letters are the same, add an "x" after the first letter (for double "x" use "z" as completion character)
-        and shift following digraphs. If needed, append a "z" to complete the final digraph (or "x" if the last letter
-        is "z").
-        For example "pp dr ..." will become "px pd r..." before encoding and "xx zz ..." will became "xz xz z...".
+        Prepare text: convert to lowercase, remove all non-useable symbols (white spaces, punctuation etc) and break the
+        message into digraphs. If both letters are the same, add an "x" after the first letter (for double "x" use "z"
+        as completion character) and shift following digraphs. If needed, append a "z" to complete the final digraph (or
+        "x" if the last letter is "z"). For example "pp dr ..." will become "px pd r..." before encoding and "xx zz ..."
+        will became "xz xz z...".
     </li>
     <li>
         If the letters appear on the same row of your table, replace them with the letters to their immediate right
@@ -92,10 +88,9 @@ w x y z 2 3
 </p>
 
 <p>
-    You should realize two function - "encode" and "decode". Each function receive a message (ciphered or opened) and
-    keyword.
-    "encode" function process and crypt a message. "decode" function decrypt the encoded message (of course in processed
-    version).
+    You should write two functions - "encode" and "decode". Each function receives a message (ciphered or opened) and
+    keyword. The "encode" function processes and encrypts a message. The "decode" function decrypts the encoded message
+    (of course in the processed version).
 </p>
 <p>
     <strong>Input: </strong> Two arguments. A message as a string (unicode) and a keyword as a string (unicode).
@@ -118,8 +113,8 @@ decode("do2y7mt22kry94y2y2", "checkio101") == "fizxzbuzzisx89xzxz"
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Little practice to work with data structures and how to use positional ciphers.
-    Also you can use this cipher for your spy correspondence without computers.
+    This mission gives you a little practice in working with data structures and shows you how to use positional
+    ciphers. Also you can use this cipher for your spy correspondence should you have no computer access.
 </p>
 
 <p>
