@@ -1,4 +1,4 @@
-checkio-mission-playfair-cipher
+playfair-cipher
 =====================
 
 Checkio mission "Playfair Cipher"
