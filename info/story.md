@@ -1,5 +1,5 @@
-Security, security and security. All our communication should encrypted.
-In the Museum of Human History we have found the interesting algorithm.
+Security, security, security. All our communication MUST be encrypted.
+In the Museum of Human History we have found a rather interesting algorithm which we think might be useful.
 
 The [Playfair cipher](http://en.wikipedia.org/wiki/Playfair_cipher) or Playfair square,
 is a manual symmetric encryption technique and was the first literal digraph substitution cipher.
