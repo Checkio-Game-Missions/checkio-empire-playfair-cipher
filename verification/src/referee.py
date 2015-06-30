@@ -1,4 +1,4 @@
-from checkio_referee import RefereeBase, covercodes, representations
+from checkio_referee import RefereeBase, covercodes, representations, ENV_NAME
 
 
 import settings_env
@@ -15,7 +15,7 @@ def ext_str(data) -> str:
     return '"{}"'.format(data) if isinstance(data, str) else str(data)
 
 
-def py_repr(test, _):
+def representation(test, _):
     arguments = ", ".join(ext_str(d) for d in test["input"])
     return "{}({})".format(test["function_name"], arguments)
 
@@ -25,9 +25,10 @@ class Referee(RefereeBase):
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
     ENV_COVERCODE = {
-        "python_3": covercodes.py_unwrap_args,
-        "python_2": covercodes.py_unwrap_args,
+        ENV_NAME.PYTHON: covercodes.py_unwrap_args,
+        ENV_NAME.JS_NODE: covercodes.js_unwrap_args
     }
     CALLED_REPRESENTATIONS = {
-        "python_3": py_repr,
+        ENV_NAME.PYTHON: representation,
+        ENV_NAME.JS_NODE: representation
     }

@@ -1,0 +1,25 @@
+"use strict";
+
+function encode(message, key) {
+    return message;
+}
+
+function decode(message, key) {
+    return message;
+}
+
+var assert = require("assert");
+
+if (!global.is_checking) {
+    // These "asserts" using only for self-checking and not necessary for auto-testing
+    assert.equal(encode("Fizz Buzz is x89 XX.", "checkio101"), 'do2y7mt22kry94y2y2', "Encode fizz buzz");
+    assert.equal(decode("do2y7mt22kry94y2y2", "checkio101"), 'fizxzbuzzisx89xzxz', "Decode fizz buzz");
+    assert.equal(encode("How are you?", "hello"), 'ea2imb1ht0', "Encode How are you");
+    assert.equal(decode("ea2imb1ht0", "hello"), 'howareyouz', "Decode How are you");
+    assert.equal(encode("My name is Alex!!!", "alexander"), 'i1dlkxjqlexn', "Encode Alex");
+    assert.equal(decode("i1dlkxjqlexn", "alexander"), 'mynameisalex', "Decode Alex");
+    assert.equal(encode("Who are you?", "human"), 'rnvftc1jd5', "Encode WHo");
+    assert.equal(decode("rnvftc1jd5", "human"), 'whoareyouz', "Decode Who");
+    assert.equal(encode("ATTACK AT DAWN", "general"), 'ewwektewhnua', "Encode attack");
+    assert.equal(decode("ewwektewhnua", "general"), 'attackatdawn', "Decode attack");
+}

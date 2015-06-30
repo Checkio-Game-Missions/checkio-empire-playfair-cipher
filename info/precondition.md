@@ -1,4 +1,3 @@
 **Precondition:**
-```python
-0 < len(key) <= 36
-```
+
+`0 < |key| ≤ 36`
