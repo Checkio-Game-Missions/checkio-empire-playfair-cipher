@@ -18,3 +18,5 @@ if __name__ == '__main__':
     assert decode("rnvftc1jd5", "human") == 'whoareyouz', "Decode Who"
     assert encode("ATTACK AT DAWN", "general") == 'ewwektewhnua', "Encode attack"
     assert decode("ewwektewhnua", "general") == 'attackatdawn', "Decode attack"
+
+    print("Now that you're finished, hit the 'Check' button to review your code and earn sweet rewards!")
