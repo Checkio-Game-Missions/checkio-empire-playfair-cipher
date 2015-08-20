@@ -22,4 +22,5 @@ if (!global.is_checking) {
     assert.equal(decode("rnvftc1jd5", "human"), 'whoareyouz', "Decode Who");
     assert.equal(encode("ATTACK AT DAWN", "general"), 'ewwektewhnua', "Encode attack");
     assert.equal(decode("ewwektewhnua", "general"), 'attackatdawn', "Decode attack");
+    console.log("Now that you're finished, hit the 'Check' button to review your code and earn sweet rewards!");
 }
